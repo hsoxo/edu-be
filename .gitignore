@@ -1,0 +1,89 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Installed dependencies
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry & Pipenv
+.poetry/
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Pytest & Test cache
+.cache/
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Logs & Debugging
+logs/
+*.log
+*.out
+*.err
+debug.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDE & Editor files
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# MacOS & System files
+.DS_Store
+Thumbs.db
+
+# FastAPI-specific
+instance/
+*.db
+*.sqlite3
+
+# Docker-related
+docker-compose.override.yml
+.env
+.env.local
+.env.*.local
+.envrc
+*.secret
+secrets.json
+
+# Build files
+build/
+dist/
+*.egg-info/
+MANIFEST
+
+# Migrations (SQLAlchemy & Alembic)
+migrations/
+alembic/
+alembic.ini
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Jinja2 & Static Files Cache
+*.jinja2c
+staticfiles/
+node_modules/
+
+# Pyright & Type Checking
+.typestubs/
+pyrightconfig.json
+
+test.ipynb
