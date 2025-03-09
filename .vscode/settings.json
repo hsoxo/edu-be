@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "ruff.fixAll": true,
+  "ruff.organizeImports": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.sortImports": "explicit",
+    "source.organizeImports": "explicit"
+  }
+}

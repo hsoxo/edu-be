@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from loguru import logger
 
 from app.models import Base, engine
-from app.routes import admin_auth, course_teacher
+from app.routes import admin_auth, course, program, student, teacher
 
 
 @asynccontextmanager
@@ -26,4 +26,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 
 app.include_router(admin_auth.router, prefix="/admin-auth", tags=["admin-auth"])
-app.include_router(course_teacher.router, prefix="/course-teachers", tags=["course-teachers"])
+app.include_router(teacher.router, prefix="/teachers", tags=["teachers"])
+app.include_router(course.router, prefix="/courses", tags=["courses"])
+app.include_router(program.router, prefix="/programs", tags=["programs"])
+app.include_router(student.router, prefix="/students", tags=["students"])
